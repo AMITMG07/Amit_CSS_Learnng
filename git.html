@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Codes</title>
+    <link rel="stylesheet" href="git.css">
+</head>
+<body>
+    <div class="git_info">
+        <h1>Git Codes Information</h1>
+        <ol>
+            <li>Git Version : <p>The command <b>git --version</b> is used to check the installed version of Git on your system. When you run this command in the terminal or command prompt, it outputs something like:git version 2.34.1</p></li>
+            <p>This tells you which version of Git is currently installed. If Git is not installed, you'll likely see an error message indicating that the command is not found.</p>        
+            <li>Git Init:
+                <p>
+                    The <b>git init</b> command initializes a new Git repository in a directory. It can be used to start tracking a project with Git.
+                </p>
+            </li>
+
+            <li>
+                Git Status: 
+                <p><b>git status</b> is a command used in Git to show the current state of your working directory and staging area. It helps you see which changes have been staged, which haven't, and which files aren't being tracked by Git.</p>
+
+            </li>
+
+            <li>
+                Gif add file: 
+                <p>
+                    <b>git add <filename></b> is a command used to stage changes in Git. This means that the specified file is added to the staging area, preparing it to be committed in the next git commit operation.
+                </p>
+
+            </li>
+
+            <li>
+                Add message: <p>
+                    <b>git commit -m 'message'</b> creates a commit with a message describing the changes. Make sure to stage files first using <b>git add .</b>.
+                </p>
+
+            </li>
+
+            <li>Setting Up Git for the First Time:
+                <p>
+                    To set up Git for the first time, you need to configure your user identity using the following commands:<br>
+                    git config --global user.email "abc@gmail.com"<br>
+                    git config --global user.name "Your Name"<br>
+                    This ensures that your commits are associated with your name and email. The <b>--global</b> flag applies the settings to all repositories on your system. You can verify your configuration using <b>git config --global --list</b>. If you want to set these details for a specific repository instead, run the commands without the <b>--global</b> flag inside the repo folder.
+
+
+                </p>
+
+
+            </li>
+
+            <li>
+                Adding All Files at Once: <p>
+
+                    The <b>git add .</b> command stages all modified and new files in the current directory and its subdirectories for the next commit. It does not stage deleted files unless explicitly removed with <b>git rm</b>. This command is useful for quickly preparing all changes before running <b>git commit</b>.
+                </p>
+
+
+            </li>
+
+            <li>
+                Git Log Information: <p>
+                    The <b>git log</b> command displays the commit history of a Git repository. It shows details like commit hash, author, date, and commit message. By default, it lists commits in reverse chronological order, with the most recent commit first.
+                </p>
+
+            </li>
+
+            <li>
+                Understanding git reset --hard "version code": <p>
+                    The <b>git reset --hard <version></b> command is used to reset the current branch to a specific commit (<b><version></b>), discarding all changes in the working directory and staging area. This means any modifications or uncommitted work will be lost. It is useful when you want to completely revert to a previous state in your repository. Be cautious while using this command, as it permanently deletes uncommitted changes.
+                </p>
+            </li>
+
+            <li>
+                Git Reset --soft: <p>
+                    The <b>git reset --soft <commit></b> command is used to move the HEAD (current branch pointer) to a specific commit while keeping the changes staged in the index. This means all the changes from the commits after the specified one remain in the staging area, allowing you to commit them again if needed. It is useful when you want to undo commits but keep the changes for modification before recommitting. Unlike <b>git reset --hard</b>, it does not delete changes, making it a safer option when revising commit history.
+                </p>
+
+            </li>
+
+            <li>
+                Git Remote Add Origin: <p>
+                    The command <b>git remote add origin https://github.com/AK/CSS_Learnng.git</b> is used to link a local Git repository to a remote repository hosted on GitHub. Here, origin is the default name for the remote repository, and the given URL is its location. This connection allows you to push and pull changes between your local and remote repositories, enabling collaboration and backup. After adding the remote, you can use commands like <b>git push -u origin main</b> to upload your local code to GitHub.
+                </p>
+            </li>
+
+            <li>
+                Understanding git branch -M main: <p>
+                    The command <b>git branch -M main</b> is used in Git to rename the current branch to main. The -M flag stands for "move/rename" and forces the branch name change, even if a branch named main already exists. This command is particularly useful when initializing a new repository, as Git previously used master as the default branch. Many developers and organizations now prefer main as the default branch name for clarity and inclusivity. If you run this command in a new repository, it ensures that the initial branch is named main instead of master.
+                </p>
+            </li>
+
+            <li>
+                Git Clone: <p>
+                    Commnad <b>git clone</b> is used to copy a remote Git repository to your local machine. The basic syntax is git clone <repository_url>. You can also clone a specific branch using <b>--branch <branch_name></b> or into a custom directory by specifying its name at the end.
+                </p>
+            </li>
+
+            <li>
+                Git Pull: <p>
+                    Command <b>git pull</b> is used to fetch and merge changes from a remote repository into the local branch. It combines <b>git fetch</b> (downloads updates) and <b>git merge</b> (integrates them) in one step, keeping your local branch up to date.
+                </p>
+            </li>
+
+        </ol>
+
+
+    </div>
+</body>
+</html>
